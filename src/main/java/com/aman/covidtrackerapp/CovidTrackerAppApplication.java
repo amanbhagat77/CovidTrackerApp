@@ -10,6 +10,8 @@ import java.sql.Date;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.util.ResourceUtils;
 
 import com.aman.covidtrackerapp.dtos.CountryDataProvider;
@@ -32,9 +34,11 @@ public class CovidTrackerAppApplication {
 	}
 	
 	public static String loadJSON() throws Exception{
-		File file = ResourceUtils.getFile("classpath:static/country-state.json");
-	    InputStream inputStream = new FileInputStream(file);
-	    InputStreamReader isReader = new InputStreamReader(inputStream);
+		//File file = ResourceUtils.getFile("classpath:static/country-state.json");
+		Resource resource = new ClassPathResource("static/country-state.json");
+	    //InputStream inputStream = new FileInputStream(file);
+	    //InputStreamReader isReader = new InputStreamReader(inputStream);
+		InputStreamReader isReader = new InputStreamReader(resource.getInputStream());
 	    BufferedReader reader = new BufferedReader(isReader);
 	    StringBuffer sb = new StringBuffer();
 	    String line;
