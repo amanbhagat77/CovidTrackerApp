@@ -12,7 +12,7 @@ import com.aman.covidtrackerapp.models.CovidStat;
 
 public interface CovidStatRepo extends JpaRepository<CovidStat, Integer>{
 
-	@Query(value = "Select * from covidstats where action_type=?1 and date=?2 and country=?3 and region=?4",nativeQuery = true)
+	@Query(value = "select * from covidstats where action_type=?1 and date=?2 and country=?3 and region=?4",nativeQuery = true)
 	public CovidStat getFigure(String action_type,Date date, String country, String region);
 	
 	@Query(value = "select date, sum(figure) as ?2 from covidstats where country =?1 and action_type =?2 and region =?3 and datediff(curdate(), date) < ?4 group by date order by date asc", nativeQuery = true)

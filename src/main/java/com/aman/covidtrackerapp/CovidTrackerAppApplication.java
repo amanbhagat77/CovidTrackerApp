@@ -1,23 +1,19 @@
 package com.aman.covidtrackerapp;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.sql.Date;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.util.ResourceUtils;
+
 
 import com.aman.covidtrackerapp.dtos.CountryDataProvider;
 import com.google.gson.Gson;
 
-import ch.qos.logback.core.Context;
 
 @SpringBootApplication
 public class CovidTrackerAppApplication {

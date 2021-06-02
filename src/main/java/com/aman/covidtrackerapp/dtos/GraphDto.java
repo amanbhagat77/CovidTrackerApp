@@ -37,8 +37,5 @@ public class GraphDto {
 		return "GraphDto [action_type=" + action_type + ", country=" + country + ", region=" + region + ", timeperiod="
 				+ timeperiod + "]";
 	}
-	
-	
-	
-	
+		
 }

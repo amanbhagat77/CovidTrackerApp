@@ -31,5 +31,6 @@
 
 </div>
 <%@ include file = "footer.jsp" %>
+<script src = /static/js/app.js></script>
 </body>
 </html>
