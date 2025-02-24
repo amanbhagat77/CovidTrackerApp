@@ -7,7 +7,7 @@
 2. Download MySQL Workbench : https://dev.mysql.com/downloads/workbench/
 3. Download MySQL DB:
     1.INstall MYSQL Installer https://dev.mysql.com/downloads/installer/
-   2. Follow steps in video.
+   2. Follow steps in video. https://drive.google.com/drive/folders/1kTQekiRnX58BWIl1a9mnZBLvytealJo-?usp=sharing
    3. Username/Password: root/password
 4. Download Eclipse IDE: https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2024-12/R/eclipse-java-2024-12-R-win32-x86_64.zip
 5. Download Covid Tracker Project
